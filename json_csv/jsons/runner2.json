@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2019/09/24",
+    "time": "19:36:40",
+    "score": 555,
+    "runs": 1,
+    "fish": 324,
+    "consumabled_consumbed": {
+      "COIN_MAG": 3,
+      "INVINCIBILITY": 2,
+      "SCORE_MULTIPLAYER": 2
+    },
+    "obstacle_impacted": "SimpleBarricade",
+    "speed_atDeath": 14.5795736
+  },
+  {
+    "date": "2019/09/23",
+    "time": "19:38:25",
+    "score": 2222,
+    "runs": 2,
+    "fish": 999,
+    "consumabled_consumbed": {
+      "COIN_MAG": 3,
+      "INVINCIBILITY": 2,
+      "SCORE_MULTIPLAYER": 2
+    },
+    "obstacle_impacted": "SimpleBarricade",
+    "speed_atDeath": 15.3640156
+  }
+]
