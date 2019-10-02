@@ -25,11 +25,11 @@ def main():
     columns = {};
     for file in filelist:
         if file.endswith(".json"):   
-            file = open(directory + "/" + filelist[0], 'r');
-            print(file);
-            j_data = json.load(file);
+            f = open(directory + "/" + file, 'r');
+            print(f);
+            j_data = json.load(f);
 
-            file.close();
+            f.close();
 
             for j in j_data:
                 if len(headers) != 0:
@@ -40,21 +40,14 @@ def main():
                     for h in j.keys():
                         headers.append(str(h));
             
-            print(headers);
-
-
             for j in j_data:
                 row = [];
                 for h in headers:
                     row.append(j[h]);
                     #print(j[h]);
                 rows.append(row);
-
-            for h in headers:
-                column = [];
-                for j in j_data:
-                    column.append(j[h]);
-                columns[h] = column
+            
+            print(rows);
   
     if(path.exists(outputfile)):
         os.remove(outputfile);
